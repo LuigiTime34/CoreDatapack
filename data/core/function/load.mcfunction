@@ -1,69 +1,67 @@
+# Initialize scoreboards
 scoreboard objectives add vdvcasttemp dummy
-scoreboard objectives add items.smash.cooldown dummy
-scoreboard objectives add items.cooldown dummy
-scoreboard objectives add mobs.axethrow dummy
-scoreboard objectives add delay dummy
-scoreboard objectives add timer dummy
-scoreboard objectives add music trigger
 scoreboard objectives add defense dummy
-scoreboard objectives add memory dummy
-scoreboard objectives add defense.abilities dummy
-scoreboard objectives add defense.intersection dummy
-scoreboard objectives add defense.speed dummy
-scoreboard objectives add defense.slowness dummy
-scoreboard objectives add parkour dummy
-scoreboard objectives add parkour.deaths deathCount
-scoreboard objectives add parkour.belttimer dummy
-scoreboard objectives add defense.damage dummy
-scoreboard objectives add defense.extra_damage dummy
-scoreboard objectives add defense.money dummy
-scoreboard objectives add archercasttemp dummy
-scoreboard objectives add defense.archer_slowness dummy
-scoreboard objectives add defense.archer_weakness dummy
-scoreboard objectives add defense.towers dummy
-scoreboard objectives add defense.wave dummy
-scoreboard objectives add defense.display dummy
-scoreboard objectives add defense.rotation dummy
-scoreboard objectives add defense.element_random dummy
-scoreboard objectives add progress dummy
-scoreboard objectives add defense.element.freeze_timer dummy
-scoreboard objectives add defense.movement dummy
-scoreboard objectives add defense.distance dummy
-scoreboard objectives add defense.targetx dummy
-scoreboard objectives add defense.targetz dummy
-scoreboard objectives add defense.bee_cooldown dummy
-scoreboard objectives add left minecraft.custom:leave_game
-scoreboard objectives add defense.range_indicator dummy
-scoreboard objectives add defense.towers_range_particle dummy
-scoreboard objectives add defense.items dummy
-scoreboard objectives add defense.element.ice_power dummy
-scoreboard objectives add defense.bee.honey_slowness dummy
-scoreboard objectives add defense.entity_id dummy
-scoreboard objectives add defense.marker_id dummy
-scoreboard objectives add defense.ravager_speed dummy
-scoreboard objectives add defense.boss_animation dummy
-scoreboard objectives add defense.health dummy
-scoreboard objectives add defense.bee_tower dummy
-scoreboard objectives add defense.storm.freeze_timer dummy
-scoreboard objectives add defense.storm.freeze_power dummy
-scoreboard objectives add defense.storm dummy
-scoreboard objectives add defense.bogged_health dummy
-scoreboard objectives add defense.panda_boo_delay dummy
-scoreboard objectives add defense.panda_boo_damage dummy
-scoreboard objectives add defense.panda_bomb_range dummy
-scoreboard objectives add UUID dummy
-scoreboard objectives add defense.blockers dummy
-scoreboard objectives add defense.bee.gold_animation dummy
-scoreboard objectives add defense.speed_loop dummy
 
+#> Monster stats
+#: basic monster attributes and behaviors
+ scoreboard objectives add monster_abilities dummy
+ scoreboard objectives add monster_speed dummy
+ scoreboard objectives add monster_slowness dummy
+ scoreboard objectives add monster_damage dummy
+ scoreboard objectives add monster_distance dummy
+ scoreboard objectives add monster_health dummy
+ scoreboard objectives add monster_speed_loop dummy
+
+#: specific monster types
+ scoreboard objectives add monster_ravager_speed dummy
+ scoreboard objectives add monster_bogged_health dummy
+
+#> Tower scoreboards
+#: general tower functionality
+ scoreboard objectives add towers_cooldown dummy
+ scoreboard objectives add tower_range_indicator dummy
+ scoreboard objectives add tower_range_particle dummy
+
+#: bee towers
+ scoreboard objectives add towers_bee_cooldown dummy
+ scoreboard objectives add towers_bee_util dummy
+ scoreboard objectives add towers_bee_gold_animation dummy
+
+#: storm towers
+ scoreboard objectives add towers_storm dummy
+ scoreboard objectives add towers_storm_freeze_timer dummy
+ scoreboard objectives add towers_storm_freeze_power dummy
+
+#: panda towers
+ scoreboard objectives add towers_panda_boo_delay dummy
+ scoreboard objectives add towers_panda_boo_damage dummy
+ scoreboard objectives add towers_panda_bomb_range dummy
+
+#> Game systems
+#: core game mechanics
+ scoreboard objectives add game_money dummy
+ scoreboard objectives add game_wave dummy
+ scoreboard objectives add game_display dummy
+ scoreboard objectives add game_rotation dummy
+ scoreboard objectives add game_progress dummy
+ scoreboard objectives add game_blockers dummy
+
+#> Utility Scoreboards
+#: system tracking and player data
+ scoreboard objectives add util_entity_id dummy
+ scoreboard objectives add util_marker_id dummy
+ scoreboard objectives add util_uuid dummy
+ scoreboard objectives add left minecraft.custom:leave_game
+
+# Initialize teams
 team add defense_enemies
-bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"$wave_level",objective:"defense.wave"},bold:1b,color:"aqua",type:"score"}]
-bossbar add core:defense.boss ""
-
-team add Players
-team add Monsters
 team add green
 team add defense_player
 
-tellraw @a {text:"Datapack Has Loaded Succesfully!",color:"green",bold:1b,type:"text"}
-playsound minecraft:block.note_block.xylophone master @a ~ ~ ~ 100000000000
+# Initialize bossbar(s)
+bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"$wave_level",objective:"defense.wave"},bold:1b,color:"aqua",type:"score"}]
+bossbar add core:defense.boss ""
+
+# Tell Dev reload message
+tellraw LuigiTime34 {text:"Datapack Has Loaded Succesfully!",color:"green",bold:1b,type:"text"}
+playsound minecraft:block.note_block.xylophone master LuigiTime34 ~ ~ ~ 100000000000

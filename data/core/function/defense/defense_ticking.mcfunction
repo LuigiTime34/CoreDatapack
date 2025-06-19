@@ -221,13 +221,6 @@ execute as @e[tag=defense.tower_placer] at @s if entity @n[distance=..3.5,tag=to
 execute as @p[gamemode=adventure] at @s at @n[tag=tower-barrel-marker,tag=open] run function core:defense/towers/global/tick
 execute as @e[type=minecraft:marker,tag=tower-barrel-marker,tag=!open] at @s if block ~ ~ ~ minecraft:barrel[open=true] run tag @s add open
 execute as @e[type=minecraft:marker,tag=tower-barrel-marker,tag=open] at @s if block ~ ~ ~ minecraft:barrel[open=false] run tag @s remove open
-# Targeting system
-#execute as @e[tag=defense-monster] store result score @s defense.targetx run data get entity @s Pos[0] -10
-#execute as @e[tag=defense-monster] store result score @s defense.targetz run data get entity @s Pos[2] -10
-#execute as @e[tag=defense-monster] run scoreboard players operation @s defense.targetx -= $start.x defense.targetx
-#execute as @e[tag=defense-monster] run scoreboard players operation @s defense.targetz -= $start.z defense.targetz
-#execute as @e[tag=defense-monster] run scoreboard players operation @s defense.distance = @s defense.targetx
-#execute as @e[tag=defense-monster] run scoreboard players operation @s defense.distance += @s defense.targetz
 
 # Display Ranges
 execute as @e[tag=defense.tower_marker,tag=!defense.off,tag=!bee-center-marker] at @s run rotate @s ~6 ~
