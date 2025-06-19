@@ -1,0 +1,11 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:gray_concrete",
+        "minecraft:red_concrete",
+        "minecraft:orange_concrete",
+        "minecraft:yellow_concrete",
+        "minecraft:redstone_block",
+        "minecraft:gray_terracotta"
+    ]
+}

@@ -1,0 +1,513 @@
+Wave 1
+Zombie
+
+Wave 2
+Zombie
+Zombie
+
+Wave 3
+Zombie
+Zombie
+Zombie
+
+Wave 4
+Skeleton
+
+Wave 5
+Zombie
+Skeleton
+
+Wave 6
+Skeleton
+Zombie
+Zombie
+
+Wave 7
+Skeleton
+Skeleton
+
+Wave 8
+Creeper
+
+Wave 9
+Skeleton
+Creeper
+
+Wave 10
+Zombie
+Skeleton
+Creeper
+Zombie
+
+Wave 11
+Zombie
+Zombie
+Zombie
+Skeleton
+Skeleton
+
+Wave 12
+Spider
+Zombie
+
+Wave 13
+Zombie
+Zombie
+Spider
+Zombie
+
+Wave 14
+Chicken_Jockey
+Zombie
+Skeleton
+Zombie
+Zombie
+
+Wave 15
+Zombie
+Zombie
+Skeleton
+Chicken_Jockey
+Zombie
+Skeleton
+
+Wave 16
+Silverfish
+Silverfish
+Zombie
+Zombie
+Skeleton
+Zombie
+Zombie
+
+Wave 17
+Zombie
+Spider
+Zombie
+Spider
+Skeleton
+Silverfish
+Zombie
+
+Wave 18
+Zombie
+Zombie
+Creeper
+Skeleton
+Silverfish
+Zombie
+
+Wave 19
+Skeleton
+Spider
+Zombie
+Silverfish
+Creeper
+Creeper
+Zombie
+Spider
+
+Wave 20
+Skeleton
+Spider
+Spider
+Iron_Golem_Boss
+Zombie
+Zombie
+
+Wave 21
+Creeper
+Skeleton
+Witch
+Zombie
+Skeleton
+Spider
+
+Wave 22
+Chicken_Jockey
+Spider
+Skeleton
+Witch
+Zombie
+Creeper
+Silverfish
+
+Wave 23
+Enderman
+Zombie
+Zombie
+Zombie
+Chicken_Jockey
+Skeleton
+Skeleton
+Witch
+
+Wave 24
+Spider
+Enderman
+Silverfish
+Creeper
+Skeleton
+Chicken_Jockey
+Zombie
+
+Wave 25
+Enderman
+Skeleton
+Spider
+Skeleton
+Silverfish
+Silverfish
+Chicken_Jockey
+Creeper
+
+Wave 26
+Spider
+Enderman
+Chicken_Jockey
+Silverfish
+Zombie
+Skeleton
+Witch
+Zombie
+Skeleton
+
+Wave 27
+Spider
+Enderman
+Zombie
+Skeleton
+Witch
+Creeper
+Zombie
+Skeleton
+Silverfish
+Creeper
+
+Wave 28
+Zombie
+Zombie
+Skeleton
+Witch
+Silverfish
+Zombie
+Creeper
+Creeper
+Bogged
+
+Wave 29
+Spider
+Silverfish
+Enderman
+Zombie
+Skeleton
+Witch
+Skeleton
+Creeper
+Creeper
+Bogged
+
+Wave 30
+Iron_Golem
+Spider
+Enderman
+Zombie
+Skeleton
+Witch
+Creeper
+Zombie
+Silverfish
+Zombie
+Zombie
+Warden
+Zombie
+Zombie
+
+Wave 31
+Iron_Golem
+Spider
+Enderman
+Silverfish
+Zombie
+Skeleton
+Witch
+Creeper
+Zombie
+Bogged
+
+Wave 32
+Zombified_Piglin
+Chicken_Jockey
+Zombie
+Skeleton
+Witch
+Creeper
+Zombie
+Skeleton
+Creeper
+
+Wave 33
+Spider
+Zombified_Piglin
+Enderman
+Silverfish
+Zombie
+Skeleton
+Witch
+Skeleton
+Iron_Golem
+Creeper
+
+Wave 34
+Iron_Golem
+Enderman
+Chicken_Jockey
+Silverfish
+Zombie
+Witch
+Creeper
+Zombie
+Skeleton
+Bogged
+
+Wave 35
+Chicken_Jockey
+Iron_Golem
+Spider
+Spider
+Zombified_Piglin
+Silverfish
+Skeleton
+Creeper
+Witch
+Creeper
+Zombie
+
+Wave 36
+Zombified_Piglin
+Creeper
+Spider
+Spider
+Enderman
+Chicken_Jockey
+Skeleton
+Witch
+Creeper
+Zombie
+Skeleton
+Silverfish
+
+Wave 37
+Iron_Golem
+Enderman
+Enderman
+Spider
+Spider
+Zombified_Piglin
+Zombie
+Skeleton
+Witch
+Skeleton
+Bogged
+
+Wave 38
+Chicken_Jockey
+Spider
+Spider
+Spider
+Chicken_Jockey
+Silverfish
+Skeleton
+Zombified_Piglin
+Witch
+Creeper
+Zombie
+Skeleton
+
+Wave 39
+Iron_Golem
+Chicken_Jockey
+Spider
+Spider
+Witch
+Spider
+Enderman
+Zombified_Piglin
+Skeleton
+Zombified_Piglin
+Zombie
+Skeleton
+Creeper
+
+Wave 40
+Iron_Golem
+Spider
+Spider
+Spider
+Enderman
+Chicken_Jockey
+Zombified_Piglin
+Skeleton
+Zombified_Piglin
+Silverfish
+Creeper
+Zombie
+Zombie
+Ravager
+Zombie
+Zombie
+
+Wave 41
+Zombie
+Witch
+Creeper
+Enderman
+Zombified_Piglin
+Zombie
+Skeleton
+Creeper
+Bogged
+
+Wave 42
+Iron_Golem
+Enderman
+Spider
+Spider
+Chicken_Jockey
+Skeleton
+Zombified_Piglin
+Zombie
+Skeleton
+Witch
+Creeper
+Creeper
+Bogged
+
+Wave 43
+Bogged
+Spider
+Spider
+Enderman
+Skeleton
+Zombified_Piglin
+Chicken_Jockey
+Skeleton
+Witch
+Creeper
+Zombified_Piglin
+Creeper
+Bogged
+Zombie
+
+Wave 44
+Iron_Golem
+Creeper
+Chicken_Jockey
+Skeleton
+Bogged
+Zombified_Piglin
+Zombie
+Skeleton
+Witch
+Creeper
+
+Wave 45
+Spider
+Spider
+Spider
+Enderman
+Zombie
+Skeleton
+Witch
+Skeleton
+Zombified_Piglin
+Silverfish
+Creeper
+Bogged
+
+Wave 46
+Iron_Golem
+Silverfish
+Enderman
+Spider
+Spider
+Chicken_Jockey
+Skeleton
+Zombified_Piglin
+Zombie
+Skeleton
+Witch
+Creeper
+Bogged
+
+Wave 47
+Iron_Golem
+Spider
+Spider
+Spider
+Enderman
+Zombified_Piglin
+Skeleton
+Zombie
+Skeleton
+Witch
+Creeper
+Silverfish
+Witch
+Creeper
+Bogged
+
+Wave 48
+Chicken_Jockey
+Silverfish
+Iron_Golem
+Spider
+Spider
+Chicken_Jockey
+Enderman
+Skeleton
+Zombie
+Zombie
+Skeleton
+Witch
+Zombified_Piglin
+Silverfish
+Witch
+Creeper
+Bogged
+
+Wave 49
+Iron_Golem
+Enderman
+Spider
+Spider
+Chicken_Jockey
+Skeleton
+Zombified_Piglin
+Zombie
+Skeleton
+Zombified_Piglin
+Silverfish
+Witch
+Bogged
+Bogged
+
+Wave 50
+Spider
+Spider
+Skeleton
+Silverfish
+Spider
+Silverfish
+Enderman
+Skeleton
+Zombified_Piglin
+Zombie
+Skeleton
+Witch
+Zombified_Piglin
+Creeper
+Bogged
+Giant
+Creeper
+Creeper

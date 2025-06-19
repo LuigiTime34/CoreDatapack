@@ -1,0 +1,11 @@
+{
+    "replace": true,
+    "values": [
+        "minecraft:grass_block",
+        "minecraft:gray_concrete_powder",
+        "minecraft:red_concrete_powder",
+        "minecraft:orange_concrete_powder",
+        "minecraft:yellow_concrete_powder",
+        "minecraft:gray_terracotta"
+    ]
+}

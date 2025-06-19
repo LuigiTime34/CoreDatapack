@@ -1,0 +1,1 @@
+$scoreboard players display name $money defense.display ["",{"text":"\u0002     ","color":"white"},{"text":"$(gold)","color":"gold","bold":true}]
