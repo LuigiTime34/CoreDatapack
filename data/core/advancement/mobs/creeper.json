@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:creeper_head"
+        },
+        "title": "Creeper",
+        "description": "Health: 70\nSpeed: 2.4 BPS\nGold: 10\nDeals bonus damage to player's base if it reaches the end; transforms into Charged Creeper if struck by lightning.",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "parent": "core:mobs/skeleton",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "impossible"
+        ]
+    ],
+    "rewards": {
+        "function": "core:monsters/info/creeper"
+    }
+}

@@ -1,6 +1,5 @@
 # Initialize scoreboards
 scoreboard objectives add vdvcasttemp dummy
-scoreboard objectives add defense dummy
 
 #> Monster stats
 #: basic monster attributes and behaviors
@@ -59,7 +58,7 @@ team add green
 team add defense_player
 
 # Initialize bossbar(s)
-bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"$wave_level",objective:"defense.wave"},bold:1b,color:"aqua",type:"score"}]
+bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"wave.level",objective:"game_wave"},bold:1b,color:"aqua",type:"score"}]
 bossbar add core:defense.boss ""
 
 # Tell Dev reload message

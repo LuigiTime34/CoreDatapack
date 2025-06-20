@@ -1,0 +1,1 @@
+scoreboard players set dead. game_progress 1

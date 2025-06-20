@@ -1,2 +1,0 @@
-execute store result storage core:defense.bee_speed speed float 0.005 run attribute @n[tag=defense.bee] minecraft:attack_knockback base get
-function core:defense/towers/bee/move_macro with storage core:defense.bee_speed

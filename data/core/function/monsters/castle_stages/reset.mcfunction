@@ -1,0 +1,1 @@
+place template core:castle/normal -69 -59 97

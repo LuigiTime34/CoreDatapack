@@ -1,1 +1,0 @@
-$scoreboard players display name $wave_timer defense.display ["",{"text":"\u0004     ","color":"white"},{"text":"$(wave_timer)","color":"aqua","bold":true}]

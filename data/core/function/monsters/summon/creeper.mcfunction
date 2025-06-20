@@ -1,0 +1,3 @@
+execute positioned 4 -59 146 run summon minecraft:creeper ~ ~ ~ {CustomNameVisible:1b,Health:75,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["defense-monster","defense.health_display","defense-creeper","defense.new_mob"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:75},{id:"minecraft:attack_damage",base:10},{id:"minecraft:attack_knockback",base:24}],PersistenceRequired:1b}
+execute as @a[advancements={core:mobs/creeper=false}] run advancement grant @s only core:mobs/creeper
+execute positioned 4 -59 146 run scoreboard players set @n[tag=defense-creeper] monster_distance 0

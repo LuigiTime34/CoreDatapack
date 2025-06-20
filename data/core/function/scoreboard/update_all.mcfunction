@@ -1,0 +1,9 @@
+# Update health display - if the base recently took damage, display a - and the gold they got, otherwise, just display health
+$execute unless score recent.hit monster_damage matches 1.. run scoreboard players display name health.remaining game_display ["",{text:"\u0001"},{text:"\u0001",font:"minecraft:negative"},{text:"\u0003",font:"minecraft:positive"},"     ",{text:"$(health)",font:"minecraft:negative"},{text:"$(spaces)",font:"minecraft:positive"},{text:"$(health)",color:"red"},{text:" +000",font:"minecraft:positive"}]
+
+$execute if score recent.hit monster_damage matches 1.. run scoreboard players display name health.remaining game_display ["",["",{text:"\u0001"},{text:"\u0001",font:"minecraft:negative"},{text:"\u0003",font:"minecraft:positive"},"     ",{text:"$(health)",font:"minecraft:negative"},{text:"$(spaces)",font:"minecraft:positive"},{text:"$(health)",color:"red"},{text:" -$(recent_damage)",color:"red"}]
+
+# Update gold display - if the player recently got gold, display a + and the gold they got, otherwise, just display the gold.
+$execute unless score recent.kill game_money matches 1.. run scoreboard players display name money. game_display ["",{text:"\u0002",color:"white"},{text:"\u0002",font:"minecraft:negative"},{text:"\u0003",font:"minecraft:positive"},"     ",{text:"$(money)",font:"minecraft:negative"},{text:"$(spaces)",font:"minecraft:positive"},{text:"$(money)",color:"gold"},{text:" +000",font:"minecraft:positive"}]
+
+$execute if score recent.kill game_money matches 1.. run scoreboard players display name money. game_display ["",{text:"\u0002",color:"white"},{text:"\u0002",font:"minecraft:negative"},{text:"\u0003",font:"minecraft:positive"},"     ",{text:"$(money)",font:"minecraft:negative"},{text:"$(spaces)",font:"minecraft:positive"},{text:"$(money)",color:"gold"},{text:" +$(recent_gold)",color:"gold"}]

@@ -1,1 +1,0 @@
-$scoreboard players display name $wave_level defense.display ["",{"text":"\u0003     ","color":"white"},{"text":"$(wave)","color":"dark_aqua","bold":true}]

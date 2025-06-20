@@ -1,0 +1,6 @@
+execute positioned 4 -59 146 run summon minecraft:spider ~ ~ ~ {CustomNameVisible:1b,Health:30,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["defense-monster","defense.health_display","defense-spider","defense.has_skellie","defense.new_mob"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:30},{id:"minecraft:attack_damage",base:0},{id:"minecraft:attack_knockback",base:26}],PersistenceRequired:1b,Passengers:[{id:"minecraft:skeleton",CustomNameVisible:1b,Health:25,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["defense-monster","defense.health_display","defense-skeleton","defense.riding_spider"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:25},{id:"minecraft:attack_damage",base:0}],PersistenceRequired:1b,equipment:{feet:{id:"minecraft:iron_boots"},legs:{id:"minecraft:iron_leggings"},chest:{id:"minecraft:iron_chestplate"},head:{id:"minecraft:iron_helmet"}}}]}
+execute as @a[advancements={core:mobs/spider=false}] run advancement grant @s only core:mobs/spider
+
+scoreboard players add mobs.left game_wave 1
+execute positioned 4 -59 146 run scoreboard players set @n[tag=defense-skeleton] monster_distance 0
+execute positioned 4 -59 146 run scoreboard players set @n[tag=defense-spider] monster_distance 0

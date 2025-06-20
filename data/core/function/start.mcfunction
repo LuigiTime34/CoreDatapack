@@ -1,0 +1,1 @@
+scoreboard players set defense.started game_progress 1

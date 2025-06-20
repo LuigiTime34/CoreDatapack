@@ -1,1 +1,0 @@
-place template core:defense/castle/normal -69 -59 97
