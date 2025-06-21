@@ -6,8 +6,8 @@ function core:waves/wave_management
 
 #> Bossbar Management
  #: hide boss bar when no boss present
- execute unless entity @n[tag=defense.boss] run bossbar set core:defense.boss visible false
- execute if entity @n[tag=defense.boss] run bossbar set core:defense.boss name {selector:"@n[tag=defense.boss]",type:"selector"}
+ execute unless entity @n[tag=defense.boss] run bossbar set core:boss visible false
+ execute if entity @n[tag=defense.boss] run bossbar set core:boss name {selector:"@n[tag=defense.boss]",type:"selector"}
 
 #> Monster Abilities
 execute as @e[tag=defense-monster] run function core:monsters/abilities/abilities_ticking

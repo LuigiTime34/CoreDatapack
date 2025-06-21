@@ -4,7 +4,7 @@ $execute if score current.chain towers_storm matches $(max_chain_length).. run r
 
 scoreboard players add current.chain towers_storm 1
 tag @s add defense.in_chain
-damage. @s $(chain_damage) core:main by @p
+$damage @s $(chain_damage) core:main by @p
 playsound minecraft:block.vault.close_shutter master @a ~ ~ ~ 10 1.8
 playsound minecraft:block.vault.eject_item master @a ~ ~ ~ 10 1.8
 playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 10 0.5
@@ -15,8 +15,8 @@ $execute unless entity @n[tag=defense-monster,distance=..$(chain_radius),tag=!de
 # Otherwise, continue the chain by doing raycast towards and them running the function again
 tag @n[tag=defense-monster,tag=!defense.in_chain,tag=!defense.chain_starter] add defense.chain_target
 # Generate random numbers before raycast
-execute store result storage core:defense.storm_raycast x float .01 run random value -30..30
-execute store result storage core:defense.storm_raycast y float .01 run random value -30..30
-execute as @n[tag=defense.storm_cloud] at @s anchored eyes run function core:towers/storm/chain/raycast with storage core:defense.storm_raycast
+execute store result storage core:storm_raycast x float .01 run random value -30..30
+execute store result storage core:storm_raycast y float .01 run random value -30..30
+execute as @n[tag=defense.storm_cloud] at @s anchored eyes run function core:towers/storm/chain/raycast with storage core:storm_raycast
 
-execute as @n[tag=defense-monster,tag=!defense.in_chain,tag=!defense.chain_starter] at @s run function core:towers/storm/chain/chain_loop with storage core:defense.storm_raycast
+execute as @n[tag=defense-monster,tag=!defense.in_chain,tag=!defense.chain_starter] at @s run function core:towers/storm/chain/chain_loop with storage core:storm_raycast

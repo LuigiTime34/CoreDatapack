@@ -59,7 +59,7 @@ team add defense_player
 
 # Initialize bossbar(s)
 bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"wave.level",objective:"game_wave"},bold:1b,color:"aqua",type:"score"}]
-bossbar add core:defense.boss ""
+bossbar add core:boss ""
 
 # Tell Dev reload message
 tellraw LuigiTime34 {text:"Datapack Has Loaded Succesfully!",color:"green",bold:1b,type:"text"}
