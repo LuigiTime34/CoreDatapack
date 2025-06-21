@@ -1,5 +1,5 @@
-tag @a add defense.selling_all
-execute as @e[tag=tower-barrel-marker] at @s at @n[distance=..5,tag=panda-center-marker,tag=!defense.off] run function core:towers/panda/sell
-execute as @e[tag=tower-barrel-marker] at @s at @n[distance=..5,tag=storm-center-marker,tag=!defense.off] run function core:towers/storm/sell
-execute as @e[tag=tower-barrel-marker] at @s at @n[distance=..5,tag=bee-center-marker,tag=!defense.off] run function core:towers/bee/sell
-tag @a remove defense.selling_all
+tag @a add towers.selling_all
+execute as @e[tag=towers.barrel_marker] at @s at @n[distance=..5,tag=towers.panda_marker,tag=!towers.off] run function core:towers/panda/sell
+execute as @e[tag=towers.barrel_marker] at @s at @n[distance=..5,tag=towers.storm_marker,tag=!towers.off] run function core:towers/storm/sell
+execute as @e[tag=towers.barrel_marker] at @s at @n[distance=..5,tag=towers.bee_center,tag=!towers.off] run function core:towers/bee/sell
+tag @a remove towers.selling_all

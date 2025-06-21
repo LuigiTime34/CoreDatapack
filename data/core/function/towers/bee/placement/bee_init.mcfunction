@@ -2,7 +2,7 @@
 execute unless score money. game_money matches 30.. run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 2 1
 execute unless score money. game_money matches 30.. run return run tellraw @a {text:"Not enough gold!",color:"gold",type:"text"}
 
-tag @n[tag=defense.tower_square] add defense.has_tower
+tag @n[tag=towers.square] add defense.has_tower
 
 scoreboard players remove money. game_money 30
 

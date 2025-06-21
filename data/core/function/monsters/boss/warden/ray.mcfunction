@@ -4,7 +4,7 @@ particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 0 force
 
 #Run a function if a block was successfully detected.
 
-execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=defense.warden_disabled,sort=nearest] run function core:monsters/boss/warden/check_hit_entity
+execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=monsters.warden_disabled,sort=nearest] run function core:monsters/boss/warden/check_hit_entity
 scoreboard players add #distance vdvcasttemp 1
 
 #Advance forward and run the ray again if no entity and/or block was found.

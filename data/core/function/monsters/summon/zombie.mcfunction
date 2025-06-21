@@ -1,3 +1,3 @@
-execute positioned 4 -59 146 run summon minecraft:zombie ~ ~ ~ {CustomNameVisible:1b,Health:20,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["defense-monster","defense.health_display","defense-zombie","defense.new_mob"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:20},{id:"minecraft:attack_damage",base:0},{id:"minecraft:attack_knockback",base:18},{id:"minecraft:armor",base:0}],PersistenceRequired:1b}
+execute positioned 4 -59 146 run summon minecraft:zombie ~ ~ ~ {CustomNameVisible:1b,Health:20,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["monster","monsters.show_health","monsters.zombie","monsters.new"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:20},{id:"minecraft:attack_damage",base:0},{id:"minecraft:attack_knockback",base:18},{id:"minecraft:armor",base:0}],PersistenceRequired:1b}
 execute as @a[advancements={core:mobs/zombie=false}] run advancement grant @s only core:mobs/zombie
-execute positioned 4 -59 146 run scoreboard players set @n[tag=defense-zombie] monster_distance 0
+execute positioned 4 -59 146 run scoreboard players set @n[tag=monsters.zombie] monster_distance 0

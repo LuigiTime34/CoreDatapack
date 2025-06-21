@@ -1,7 +1,7 @@
 # execute as @a run function tl:title {"text":"'Wave complete!'","tick":1,"location":"actionbar","sound":"'block.note_block.hat master @s ~ ~ ~ 1 2 1'"}
 # Cleanup
-tag @e[tag=defense.giant_disabled] remove defense.giant_disabled
-tag @e[tag=defense.creeper_disabled] remove defense.creeper_disabled
+tag @e[tag=monsters.giant_disabled] remove defense.giant_disabled
+tag @e[tag=monsters.creeper_disabled] remove defense.creeper_disabled
 function core:waves/animation
 scoreboard players set wave.timer game_wave 30
 function core:scoreboard/wave_timer

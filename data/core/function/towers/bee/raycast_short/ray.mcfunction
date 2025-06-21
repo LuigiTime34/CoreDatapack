@@ -1,6 +1,6 @@
 #Check if an entity was detected.
 
-execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=defense-monster,tag=!vdvray,tag=!defense-silverfish,sort=nearest] run function core:towers/bee/raycast_short/check_hit_entity
+execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=monster,tag=!vdvray,tag=!monsters.silverfish,sort=nearest] run function core:towers/bee/raycast_short/check_hit_entity
 
 #Run a function if a block was successfully detected.
 

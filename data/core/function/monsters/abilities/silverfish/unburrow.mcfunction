@@ -1,6 +1,6 @@
-execute if entity @s[tag=defense-monster] run return run scoreboard players remove @s monster_abilities 40
+execute if entity @s[tag=monster] run return run scoreboard players remove @s monster_abilities 40
 tp @s ~ ~1 ~
-tag @s add defense-monster
+tag @s add monster
 data modify entity @s Invulnerable set value 0b
 scoreboard players set @s monster_speed 32
 data modify entity @s HurtTime set value 10

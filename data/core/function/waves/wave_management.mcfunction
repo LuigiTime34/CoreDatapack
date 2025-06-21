@@ -11,4 +11,4 @@
  execute store result bossbar minecraft:defense.mobs_left value run scoreboard players get mobs.left game_wave
 
  #: give glowing effect when few mobs remain
- execute if score mobs.left game_wave matches ..5 if score wave.level game_wave matches 9.. run effect give @e[tag=defense-monster] minecraft:glowing infinite 0 true
+ execute if score mobs.left game_wave matches ..5 if score wave.level game_wave matches 9.. run effect give @e[tag=monster] minecraft:glowing infinite 0 true

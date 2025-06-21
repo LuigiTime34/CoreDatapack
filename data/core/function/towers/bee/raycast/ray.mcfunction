@@ -1,6 +1,6 @@
 #Check if an entity was detected.
 
-execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=defense-monster,tag=!vdvray,tag=!defense-baby_zombie,tag=!defense-chicken,tag=!defense-silverfish,tag=!defense-endermite,tag=!defense-spider,tag=!defense-zoglin,sort=nearest] run function core:towers/bee/raycast/check_hit_entity
+execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[dx=0,tag=monster,tag=!vdvray,tag=!monsters.baby_zombie,tag=!monsters.chicken,tag=!monsters.silverfish,tag=!monsters.endermite,tag=!monsters.spider,sort=nearest] run function core:towers/bee/raycast/check_hit_entity
 
 #Run a function if a block was successfully detected.
 

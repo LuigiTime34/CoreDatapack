@@ -4,12 +4,12 @@ $data modify entity @n[tag=$(building)] data.z_offset set from entity @s data.z_
 $data modify entity @n[tag=$(building)] data.rotation set from entity @s data.rotation
 $scoreboard players set @n[tag=$(building)] game_money $(cost)
 kill @s
-kill @n[tag=bee-center-marker]
-kill @n[tag=tower-barrel-display]
-tag @n[tag=bee-center-marker,tag=defense.off] remove defense.off
-execute as @n[tag=tower-barrel-marker] run function core:towers/global/rotate_back
-execute as @n[tag=tower-barrel-marker] at @s positioned ^ ^ ^1.5 run tp @p[gamemode=adventure] ~ -59 ~
-execute as @n[tag=bee-center-marker,tag=off] run tag @s remove defense.off
+kill @n[tag=towers.bee_center]
+kill @n[tag=towers.barrel_display]
+tag @n[tag=towers.bee_center,tag=towers.off] remove defense.off
+execute as @n[tag=towers.barrel_marker] run function core:towers/global/rotate_back
+execute as @n[tag=towers.barrel_marker] at @s positioned ^ ^ ^1.5 run tp @p[gamemode=adventure] ~ -59 ~
+execute as @n[tag=towers.bee_center,tag=towers.off] run tag @s remove towers.off
 playsound minecraft:block.smithing_table.use master @a ~ ~2 ~ 1 0.7
 particle minecraft:end_rod ~ ~2 ~ .2 .1 .2 0.5 50
 kill @e[type=minecraft:item,nbt={Item:{components:{"minecraft:custom_data":{tower_upgrade:1b}}}}]

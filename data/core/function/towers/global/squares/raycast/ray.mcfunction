@@ -1,6 +1,6 @@
 #Check if an entity was detected.
 
-execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[type=minecraft:interaction,dx=0,tag=defense.tower_placer,tag=!defense.has_tower,tag=!vdvray,sort=nearest] run function core:towers/global/squares/raycast/check_hit_entity
+execute if score #hit vdvcasttemp matches 0 positioned ~-0.05 ~-0.05 ~-0.05 as @e[type=minecraft:interaction,dx=0,tag=towers.tower_placer,tag=!game.has_tower,tag=!vdvray,sort=nearest] run function core:towers/global/squares/raycast/check_hit_entity
 
 #Run a function if a block was successfully detected.
 

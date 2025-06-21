@@ -1,5 +1,5 @@
-kill @e[tag=defense.panda_landing]
-kill @e[tag=defense.panda_tnt]
+kill @e[tag=towers.panda_landing]
+kill @e[tag=towers.panda_tnt]
 scoreboard players set wave.track game_wave 1
 #execute if score wave.level game_wave matches 3 run function core:start/warning
 $function core:waves/wave$(wave)

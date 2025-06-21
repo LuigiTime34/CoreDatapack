@@ -5,5 +5,5 @@
  #: shockwave cooldown
  execute if score @s monster_abilities matches 10 at @s run function core:monsters/boss/giant/shockwave_jump
  execute if score @s monster_abilities matches 249 at @s run function core:monsters/boss/giant/shockwave_land
- execute if score @s monster_abilities matches 190 run tag @e[tag=defense.giant_disabled] remove defense.giant_disabled
+ execute if score @s monster_abilities matches 190 run tag @e[tag=monsters.giant_disabled] remove defense.giant_disabled
  data merge entity @s {Fire:0}

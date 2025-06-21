@@ -1,9 +1,9 @@
 #function core:towers/panda/placement/replace_items
-execute as @n[tag=defense.tower_square] run data merge entity @s {transformation:{scale:[0.0f,0.0f,0.5f]},interpolation_duration:2,start_interpolation:0,Glowing:0b}
+execute as @n[tag=towers.square] run data merge entity @s {transformation:{scale:[0.0f,0.0f,0.5f]},interpolation_duration:2,start_interpolation:0,Glowing:0b}
 execute unless score money. game_money matches 10.. run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 2 1
 execute unless score money. game_money matches 10.. run return run tellraw @a {text:"Not enough gold!",color:"gold",type:"text"}
 
-tag @n[tag=defense.tower_square] add defense.has_tower
+tag @n[tag=towers.square] add defense.has_tower
 
 scoreboard players remove money. game_money 10
 

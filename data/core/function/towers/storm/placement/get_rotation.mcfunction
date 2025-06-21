@@ -2,7 +2,7 @@
 $execute unless score money. game_money matches $(cost).. run playsound minecraft:block.note_block.didgeridoo master @a ~ ~ ~ 2 1
 $execute unless score money. game_money matches $(cost).. run tellraw @a[gamemode=adventure] {"text": "Not enough gold!","color": "gold"}
 $execute unless score money. game_money matches $(cost).. run clear @a[gamemode=adventure] *[custom_data~{tower_upgrade:1b}]
-$execute unless score money. game_money matches $(cost).. at @n[tag=tower-barrel-marker,tag=open] run return run item replace block ~ ~ ~ container.$(slot_to_replace) from block 0 -43 0 container.$(item_slot)
+$execute unless score money. game_money matches $(cost).. at @n[tag=towers.barrel_marker,tag=towers.open_barrel] run return run item replace block ~ ~ ~ container.$(slot_to_replace) from block 0 -43 0 container.$(item_slot)
 
 $scoreboard players remove money. game_money $(cost)
 $title @a actionbar {"text":"You upgraded your tower for $(cost) gold!","color":"gold"}

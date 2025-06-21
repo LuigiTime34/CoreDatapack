@@ -2,18 +2,18 @@
 function core:waves/wave_management
 
 #> Monster Movement
- execute as @e[tag=defense-monster] at @s run function core:monsters/movement/movement_ticking
+ execute as @e[tag=monster] at @s run function core:monsters/movement/movement_ticking
 
 #> Bossbar Management
  #: hide boss bar when no boss present
- execute unless entity @n[tag=defense.boss] run bossbar set core:boss visible false
- execute if entity @n[tag=defense.boss] run bossbar set core:boss name {selector:"@n[tag=defense.boss]",type:"selector"}
+ execute unless entity @n[tag=monsters.boss] run bossbar set core:boss visible false
+ execute if entity @n[tag=monsters.boss] run bossbar set core:boss name {selector:"@n[tag=monsters.boss]",type:"selector"}
 
 #> Monster Abilities
-execute as @e[tag=defense-monster] run function core:monsters/abilities/abilities_ticking
+execute as @e[tag=monster] run function core:monsters/abilities/abilities_ticking
 
 #> Boss Abilities
-execute if entity @e[tag=defense.boss] run function core:monsters/boss/boss_ability_ticking
+execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_ability_ticking
 
 #> UI Display Management
  #: recent gold display
@@ -27,8 +27,8 @@ execute if entity @e[tag=defense.boss] run function core:monsters/boss/boss_abil
  execute if score recent.hit monster_damage matches 0 run function core:scoreboard/get_highest
 
 #>End of round
-execute as @p[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=defense.failure_view]
+execute as @p[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=game.failure_view]
 execute if score dead. game_progress matches 1 run function core:end/clear_all_waves
 
 #> Tower Ticking
-execute if entity @e[tag=defense.tower_marker] run function core:towers/tower_ticking
+execute if entity @e[tag=tower] run function core:towers/tower_ticking

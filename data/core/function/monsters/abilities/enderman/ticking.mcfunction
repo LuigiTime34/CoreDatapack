@@ -3,5 +3,5 @@
  execute if score @s monster_abilities matches 1 run function core:monsters/abilities/enderman/teleport
 
  #: marker management to prevent rogue tping
- execute as @s[tag=!has_marker] at @s run function core:monsters/abilities/enderman/summon_enderman_marker
- execute as @e[tag=defense.enderman-marker] at @s run function core:monsters/abilities/enderman/update_enderman_marker
+ execute as @s[tag=!monsters.marked_enderman] at @s run function core:monsters/abilities/enderman/summon_enderman_marker
+ execute as @e[tag=monsters.enderman_marker] at @s run function core:monsters/abilities/enderman/update_enderman_marker

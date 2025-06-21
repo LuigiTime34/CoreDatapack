@@ -1,7 +1,7 @@
-kill @e[tag=defense-monster]
-kill @e[tag=defense-baby_zombie]
-kill @e[tag=defense-skeleton_rider]
-kill @e[tag=defense-illusioner]
+kill @e[tag=monster]
+kill @e[tag=monsters.baby_zombie]
+kill @e[tag=monsters.skeleton_rider]
+kill @e[tag=monsters.illusioner]
 
 gamemode spectator @p[gamemode=adventure]
 scoreboard players set dead. game_progress 1

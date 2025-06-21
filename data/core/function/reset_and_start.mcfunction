@@ -19,7 +19,7 @@ item replace entity @p[gamemode=adventure] hotbar.1 from block -1 -43 0 containe
 item replace entity @p[gamemode=adventure] hotbar.2 from block -1 -43 0 container.2
 item replace entity @p[gamemode=adventure] hotbar.8 with minecraft:iron_chestplate[minecraft:custom_name={text:"",extra:[{text:"Enter Aerial View",italic:0b,color:"green"}]},minecraft:lore=[{text:"",extra:[{text:"Right click to view your towers from above",color:"dark_gray"}]}],minecraft:equippable={slot:"chest"},!minecraft:attribute_modifiers,minecraft:item_model="minecraft:spyglass",minecraft:custom_data={defense.aerial_view:1b}]
 function core:scoreboard/wave_timer
-tag @p[gamemode=adventure] add defense-started
+tag @p[gamemode=adventure] add game.started
 team join defense_player @p[gamemode=adventure]
 title @p[gamemode=adventure] times 20 30 40
 title @p[gamemode=adventure] subtitle {text:"tower defense",font:"retitled_titles:regular",color:"#25FF01",type:"text"}

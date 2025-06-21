@@ -1,2 +1,2 @@
-$execute if entity @n[tag=defense-monster,distance=..$(range)] run rotate @s facing entity @n[tag=defense-monster] feet
-$execute unless entity @n[tag=defense-monster,distance=..$(range)] run function core:towers/global/rotate_back
+$execute if entity @n[tag=monster,distance=..$(range)] run rotate @s facing entity @n[tag=monster] feet
+$execute unless entity @n[tag=monster,distance=..$(range)] run function core:towers/global/rotate_back

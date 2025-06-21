@@ -11,5 +11,5 @@ function core:towers/bee/raycast/ray
 #Raycasting finished, removing tag from the raycaster.
 
 tag @s remove vdvray
-execute if score bee.target towers_bee_util matches 1 run tag @s add defense.found_target
+execute if score bee.target towers_bee_util matches 1 run tag @s add towers.found_target
 scoreboard players set bee.target towers_bee_util 0

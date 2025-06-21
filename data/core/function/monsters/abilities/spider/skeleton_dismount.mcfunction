@@ -1,5 +1,5 @@
-tag @s add defense-monster
-tag @s add defense.health_display
+tag @s add monster
+tag @s add monsters.show_health
 data modify entity @s CustomNameVisible set value 1b
 execute at @s run tp @s ~ -59 ~
-tag @s remove defense.has_skellie
+tag @s remove monsters.has_skellie
