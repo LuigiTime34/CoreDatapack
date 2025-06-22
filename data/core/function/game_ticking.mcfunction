@@ -27,8 +27,8 @@ execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_abi
  execute if score recent.hit monster_damage matches 0 run function core:scoreboard/get_highest
 
 #>End of round
-execute as @p[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=game.failure_view]
+execute as @a[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=game.failure_view]
 execute if score dead. game_progress matches 1 run function core:end/clear_all_waves
 
 #> Tower Ticking
-execute if entity @e[tag=tower] run function core:towers/tower_ticking
+function core:towers/tower_ticking

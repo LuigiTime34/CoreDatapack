@@ -1,7 +1,7 @@
 # Summons a marker linked to this enderman
 
 # Assign a unique ID if the enderman doesn't have one
-execute unless score @s util_entity_id matches 1.. run function core:monsters/abilities/assign_entity_id
+execute unless score @s util_entity_id matches 1.. run function core:monsters/abilities/enderman/assign_entity_id
 
 # Create marker
 summon minecraft:marker ~ ~ ~ {Tags:["monsters.enderman_marker","monsters.new_marker"]}

@@ -1,5 +1,6 @@
-title @a times 10 60 20
-title @a title {text:"Boss has spawned!",font:"retitled_titles:regular",color:"#27FF06",type:"text"}
+title @a times 5 60 20
+#title @a title {text:"Boss has spawned!",font:"retitled_titles:regular",color:"#27FF06",type:"text"}
+title @a title {text:"Boss has spawned!",color:"dark_red"}
 playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1000000000000000000 0.7
 bossbar set core:boss players @a
 bossbar set core:boss visible true

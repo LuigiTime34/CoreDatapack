@@ -1,5 +1,5 @@
 execute if entity @s[tag=monsters.creeper] run function core:monsters/abilities/creeper_convert_to_charged
-$damage @s $(damage) core:main by @p
+$damage @s $(damage) minecraft:mob_attack_no_aggro by @p
 tag @s remove towers.target
 playsound minecraft:entity.breeze.wind_burst master @a ~ ~ ~ 1 2
 particle minecraft:gust_emitter_small ~ ~ ~ 0.1 0.1 0.1 0 3

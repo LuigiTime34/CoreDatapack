@@ -1,2 +1,0 @@
-$execute if entity @n[tag=towers.bee_center,distance=$(range)..] run scoreboard players set @s defense.bee.honey_slowness 0
-$execute if entity @n[tag=towers.bee_center,distance=..$(range)] run scoreboard players set @s defense.bee.honey_slowness $(slow_power)

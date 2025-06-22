@@ -7,6 +7,8 @@ scoreboard objectives add vdvcasttemp dummy
  scoreboard objectives add monster_speed dummy
  scoreboard objectives add monster_slowness dummy
  scoreboard objectives add monster_damage dummy
+  scoreboard players set bogged.heal monster_damage 20
+  scoreboard players set silverfish.heal monster_damage 30
  scoreboard objectives add monster_distance dummy
  scoreboard objectives add monster_health dummy
  scoreboard objectives add monster_speed_loop dummy
@@ -58,7 +60,7 @@ team add green
 team add defense_player
 
 # Initialize bossbar(s)
-bossbar add defense.mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"wave.level",objective:"game_wave"},bold:1b,color:"aqua",type:"score"}]
+bossbar add mobs_left ["",{text:"WAVE ",bold:1b,color:"aqua",type:"text"},{score:{name:"wave.level",objective:"game_wave"},bold:1b,color:"aqua",type:"score"}]
 bossbar add core:boss ""
 
 # Tell Dev reload message

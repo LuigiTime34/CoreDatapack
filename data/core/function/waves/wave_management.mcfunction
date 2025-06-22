@@ -8,7 +8,7 @@
  execute as @a if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"equipment":{"head":{"items":"minecraft:iron_helmet","predicates":{"minecraft:custom_data":{"defense.start_wave":true}}}}}} run function core:waves/start_next_wave_early
 
  #: mobs left display
- execute store result bossbar minecraft:defense.mobs_left value run scoreboard players get mobs.left game_wave
+ execute store result bossbar minecraft:mobs_left value run scoreboard players get mobs.left game_wave
 
  #: give glowing effect when few mobs remain
- execute if score mobs.left game_wave matches ..5 if score wave.level game_wave matches 9.. run effect give @e[tag=monster] minecraft:glowing infinite 0 true
+ execute if score mobs.left game_wave matches ..5 run effect give @e[tag=monster] minecraft:glowing infinite 0 true

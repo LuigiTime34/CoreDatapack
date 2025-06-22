@@ -3,7 +3,7 @@ kill @e[tag=monsters.baby_zombie]
 kill @e[tag=monsters.skeleton_rider]
 kill @e[tag=monsters.illusioner]
 
-gamemode spectator @p[gamemode=adventure]
+gamemode spectator @a[gamemode=adventure]
 scoreboard players set dead. game_progress 1
 
 schedule function core:end/explode 15t append

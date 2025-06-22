@@ -8,7 +8,7 @@
             "bold": true
         },
         "description": "Tower Defense",
-        "background": "minecraft:textures/block/andesite",
+        "background": "block/andesite",
         "show_toast": false,
         "announce_to_chat": false
     },

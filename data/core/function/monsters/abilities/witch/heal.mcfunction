@@ -1,5 +1,4 @@
 scoreboard players set @s monster_abilities 80
-execute if score @s defense.bee.honey_slowness matches 1.. run return fail
 # Heal itself
 playsound minecraft:entity.witch.drink master @a ~ ~ ~ 2
 effect give @s minecraft:instant_health 1 0

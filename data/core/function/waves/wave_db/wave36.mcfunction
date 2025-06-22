@@ -1,5 +1,5 @@
 execute if score wave.track game_wave matches 1 run scoreboard players set mobs.left game_wave 12
-execute if score wave.track game_wave matches 1 store result bossbar minecraft:defense.mobs_left max run scoreboard players get mobs.left game_wave
+execute if score wave.track game_wave matches 1 store result bossbar minecraft:mobs_left max run scoreboard players get mobs.left game_wave
 execute if score wave.track game_wave matches 1 run function core:monsters/summon/zombified_piglin
 execute if score wave.track game_wave matches 2 run function core:monsters/summon/creeper
 execute if score wave.track game_wave matches 3 run function core:monsters/summon/spider

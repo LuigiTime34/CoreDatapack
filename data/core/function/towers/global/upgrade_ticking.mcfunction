@@ -1,10 +1,10 @@
 # beeEEE UPGRADES
-$execute if items entity @s $(slot) *[custom_data~{bee_upgrade1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/placement/get_rotation {"building":"1","cost":"40","item_slot":"13","slot_to_replace":"13"}
-$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_attack1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/placement/get_rotation {"building":"_attack1","cost":"150","item_slot":"14","slot_to_replace":"15"}
-$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_attack2:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/placement/get_rotation {"building":"_attack2","cost":"300","item_slot":"15","slot_to_replace":"13"}
-$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_money1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/placement/get_rotation {"building":"_money1","cost":"200","item_slot":"16","slot_to_replace":"11"}
-$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_money2:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/placement/get_rotation {"building":"_money2","cost":"400","item_slot":"17","slot_to_replace":"13"}
-$execute if items entity @s $(slot) *[custom_data~{bee_sell:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_center] run function core:towers/bee/sell
+$execute if items entity @s $(slot) *[custom_data~{bee_upgrade1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/placement/get_rotation {"building":"1","cost":"40","item_slot":"13","slot_to_replace":"13"}
+$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_attack1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/placement/get_rotation {"building":"_attack1","cost":"150","item_slot":"14","slot_to_replace":"15"}
+$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_attack2:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/placement/get_rotation {"building":"_attack2","cost":"300","item_slot":"15","slot_to_replace":"13"}
+$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_money1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/placement/get_rotation {"building":"_money1","cost":"200","item_slot":"16","slot_to_replace":"11"}
+$execute if items entity @s $(slot) *[custom_data~{bee_upgrade_money2:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/placement/get_rotation {"building":"_money2","cost":"400","item_slot":"17","slot_to_replace":"13"}
+$execute if items entity @s $(slot) *[custom_data~{bee_sell:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.bee_marker] run function core:towers/bee/sell
 
 # STORM UPGRADES
 $execute if items entity @s $(slot) *[custom_data~{storm_upgrade1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.storm_marker] run function core:towers/storm/placement/get_rotation {"building":"1","cost":"75","item_slot":"18","slot_to_replace":"13"}
@@ -21,11 +21,3 @@ $execute if items entity @s $(slot) *[custom_data~{panda_upgrade_shoot2:1b}] as 
 $execute if items entity @s $(slot) *[custom_data~{panda_upgrade_bamboom1:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.panda_marker] run function core:towers/panda/placement/get_rotation {"building":"_bamboom1","cost":"150","item_slot":"3","slot_to_replace":"15"}
 $execute if items entity @s $(slot) *[custom_data~{panda_upgrade_bamboom2:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.panda_marker] run function core:towers/panda/placement/get_rotation {"building":"_bamboom2","cost":"300","item_slot":"4","slot_to_replace":"13"}
 $execute if items entity @s $(slot) *[custom_data~{panda_sell:1b}] as @n[tag=towers.barrel_marker] at @n[tag=towers.panda_marker] run function core:towers/panda/sell
-
-
-# TENT UPGRADES
-# $execute if items entity @s $(slot) *[custom_data~{tent_upgrade1:1b}] run function core:towers/tent/placement/upgrade {"building":"1"}
-# $execute if items entity @s $(slot) *[custom_data~{tent_upgrade_camp:1b}] run function core:towers/tent/placement/upgrade {"building":"_camp"}
-# $execute if items entity @s $(slot) *[custom_data~{tent_upgrade_barracks:1b}] run function core:towers/tent/placement/upgrade {"building":"_barracks"}
-# $execute if items entity @s $(slot) *[custom_data~{tent_upgrade_camp2:1b}] run function core:towers/tent/placement/upgrade {"building":"_camp2"}
-# $execute if items entity @s $(slot) *[custom_data~{tent_upgrade_barracks2:1b}] run function core:towers/tent/placement/upgrade {"building":"_barracks2"}

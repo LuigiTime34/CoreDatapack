@@ -1,3 +1,3 @@
 execute if entity @s[tag=monsters.spider] on passengers on vehicle run return fail
-$damage @s $(damage) core:main by @p
+$damage @s $(damage) minecraft:mob_attack_no_aggro by @p
 playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 10 1.3

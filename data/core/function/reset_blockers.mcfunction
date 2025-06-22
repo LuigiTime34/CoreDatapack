@@ -1,0 +1,1 @@
+execute as @e[tag=game.blocker_marker] at @s run function core:blockers/get_blocker

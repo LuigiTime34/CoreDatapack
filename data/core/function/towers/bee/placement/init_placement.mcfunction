@@ -4,10 +4,10 @@ $data modify entity @n[tag=towers.barrel_marker] data.x_offset set value $(x_off
 $data modify entity @n[tag=towers.barrel_marker] data.z_offset set value $(z_offset)
 $data modify entity @n[tag=towers.barrel_marker] data.rotation set value $(rotation)
 $scoreboard players set @n[tag=towers.barrel_marker] game_money $(sell_cost)
-execute as @n[tag=towers.bee_center,tag=towers.off] run tag @s remove towers.off
+execute as @n[tag=towers.bee_marker,tag=towers.off] run tag @s remove towers.off
 execute as @n[tag=towers.barrel_marker] run function core:towers/global/rotate_back
-execute as @n[tag=towers.barrel_marker] at @s positioned ^ ^ ^1.5 run tp @p[gamemode=adventure] ~ -59 ~
-execute as @p[gamemode=adventure] at @s run function core:towers/global/rotate_player
+execute as @n[tag=towers.barrel_marker] at @s positioned ^ ^ ^1.5 run tp @a[gamemode=adventure] ~ -59 ~
+execute as @a[gamemode=adventure] at @s run function core:towers/global/rotate_player
 execute if block ~ -60 ~-4.5 #core:path_blocks run summon minecraft:marker ~ -57.5 ~-4.8 {Tags:["towers.bee_deployer"]}
 execute if block ~ -60 ~4.5 #core:path_blocks run summon minecraft:marker ~ -57.5 ~4.8 {Tags:["towers.bee_deployer"]}
 execute if block ~-4.5 -60 ~ #core:path_blocks run summon minecraft:marker ~-4.8 -57.5 ~ {Tags:["towers.bee_deployer"]}

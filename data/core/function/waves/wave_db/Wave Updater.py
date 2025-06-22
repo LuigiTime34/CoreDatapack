@@ -14,7 +14,7 @@ def create_wave_function(wave_number, mobs):
     with open(filename, 'w') as f:
         # Write mobs left and the bossbar update command
         f.write(f"execute if score $wave_track defense.wave matches 1 run scoreboard players set $mobs_left defense.wave {len(mobs)}\n")
-        f.write(f"execute if score $wave_track defense.wave matches 1 store result bossbar minecraft:defense.mobs_left max run scoreboard players get $mobs_left defense.wave\n")
+        f.write(f"execute if score $wave_track defense.wave matches 1 store result bossbar minecraft:mobs_left max run scoreboard players get $mobs_left defense.wave\n")
         # Write mob summoning commands
         for i, mob in enumerate(mobs):
             if mob.lower() in ['iron_golem_boss', 'giant', 'ravager', 'warden']:

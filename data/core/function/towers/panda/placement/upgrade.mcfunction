@@ -1,4 +1,4 @@
-tag @e[distance=..3.5,tag=towers.panda] add dead-panda
+tag @e[distance=..3.5,tag=towers.panda] add towers.dead_panda
 execute as @e[tag=towers.dead_panda] at @s run tp @s ~ ~-300 ~
 execute as @e[tag=towers.dead_panda] at @s run kill @s
 kill @n[tag=towers.panda_marker]
@@ -12,7 +12,7 @@ kill @s
 kill @n[tag=towers.barrel_display]
 execute as @n[tag=towers.barrel_marker] run function core:towers/global/rotate_back
 execute as @n[tag=towers.panda] run function core:towers/global/rotate_back
-execute as @n[tag=towers.barrel_marker] at @s positioned ^ ^ ^1.5 run tp @p[gamemode=adventure] ~ -59 ~
+execute as @n[tag=towers.barrel_marker] at @s positioned ^ ^ ^1.5 run tp @a[gamemode=adventure] ~ -59 ~
 execute as @n[tag=towers.panda_marker,tag=towers.off] run tag @s remove towers.off
 playsound minecraft:block.smithing_table.use master @a ~ ~2 ~ 1 0.7
 particle minecraft:end_rod ~ ~2 ~ .2 .1 .2 0.5 50
