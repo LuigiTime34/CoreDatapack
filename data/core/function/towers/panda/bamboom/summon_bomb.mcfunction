@@ -8,5 +8,5 @@ $scoreboard players set @n[tag=towers.panda_new_bomb] towers_panda_bomb_range $(
 $scoreboard players set @n[tag=towers.panda_new_landing] towers_panda_bomb_range $(bomb_range)
 execute as @e[tag=towers.panda_new_bomb] store result score @s util_uuid run data get entity @s UUID[0]
 scoreboard players operation @n[tag=towers.panda_new_landing] util_uuid = @n[tag=towers.panda_new_bomb] util_uuid
-tag @n[tag=towers.panda_new_bomb] remove defense.panda_new_bomb
-tag @n[tag=towers.panda_new_landing] remove defense.panda_new_landing
+tag @n[tag=towers.panda_new_bomb] remove towers.panda_new_bomb
+tag @n[tag=towers.panda_new_landing] remove towers.panda_new_landing

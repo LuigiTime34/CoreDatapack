@@ -1,0 +1,27 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "storage": "defense:monsters",
+      "nbt": "indicator.difference_sign",
+      "color": "yellow"
+    },
+    {
+      "storage": "defense:monsters",
+      "nbt": "indicator.int",
+      "color": "yellow"
+    },
+    {
+      "storage": "defense:monsters",
+      "nbt": "indicator.dec_point",
+      "color": "yellow"
+    },
+    {
+      "storage": "defense:monsters",
+      "nbt": "indicator.dec",
+      "color": "yellow"
+    }
+  ],
+  "target": "custom_name"
+}

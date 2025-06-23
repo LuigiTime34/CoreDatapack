@@ -46,6 +46,7 @@ scoreboard objectives add vdvcasttemp dummy
  scoreboard objectives add game_rotation dummy
  scoreboard objectives add game_progress dummy
  scoreboard objectives add game_blockers dummy
+ scoreboard objectives add game_music dummy
 
 #> Utility Scoreboards
 #: system tracking and player data

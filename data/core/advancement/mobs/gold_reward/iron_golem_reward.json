@@ -8,7 +8,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{Tags:[\"defense-iron_golem\"]}"
+                            "nbt": "{Tags:[\"monsters.iron_golem\"]}"
                         }
                     }
                 ]

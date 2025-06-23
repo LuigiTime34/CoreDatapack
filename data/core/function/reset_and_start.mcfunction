@@ -1,3 +1,4 @@
+tp @p[gamemode=adventure] 1 -59 116 90 0
 forceload add 8 73 -70 159
 clone -77 -30 116 -77 -30 116 -77 -39 116
 scoreboard players set wave.level game_wave 0
@@ -14,10 +15,12 @@ effect give @a[gamemode=adventure] minecraft:weakness infinite 0 true
 effect give @a[gamemode=adventure] minecraft:speed infinite 2 true
 execute as @a[gamemode=adventure] run attribute @s minecraft:entity_interaction_range base set 12
 execute as @a[gamemode=adventure] run attribute @s minecraft:scale base set 2
+scoreboard players set song.track game_music 1
+function core:music/music_reset
 item replace entity @a[gamemode=adventure] hotbar.0 from block -1 -43 0 container.1
 item replace entity @a[gamemode=adventure] hotbar.1 from block -1 -43 0 container.0
 item replace entity @a[gamemode=adventure] hotbar.2 from block -1 -43 0 container.2
-item replace entity @a[gamemode=adventure] hotbar.8 with minecraft:iron_chestplate[minecraft:custom_name={text:"",extra:[{text:"Enter Aerial View",italic:0b,color:"green"}]},minecraft:lore=[{text:"",extra:[{text:"Right click to view your towers from above",color:"dark_gray"}]}],minecraft:equippable={slot:"chest"},!minecraft:attribute_modifiers,minecraft:item_model="minecraft:spyglass",minecraft:custom_data={defense.aerial_view:1b}]
+#item replace entity @a[gamemode=adventure] hotbar.8 with minecraft:iron_chestplate[minecraft:custom_name={text:"",extra:[{text:"Enter Aerial View",italic:0b,color:"green"}]},minecraft:lore=[{text:"",extra:[{text:"Right click to view your towers from above",color:"dark_gray"}]}],minecraft:equippable={slot:"chest"},!minecraft:attribute_modifiers,minecraft:item_model="minecraft:spyglass",minecraft:custom_data={defense.aerial_view:1b}]
 function core:scoreboard/wave_timer
 tag @a[gamemode=adventure] add game.started
 team join defense_player @a[gamemode=adventure]

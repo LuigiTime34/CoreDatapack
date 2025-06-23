@@ -110,7 +110,7 @@ def create_advancement_json(mob_name, base_path):
                                 "entity": "this",
                                 "predicate": {
                                     # Using lowercase tag consistently
-                                    "nbt": f"{{Tags:[\"defense-{mob_lowercase}\"]}}"
+                                    "nbt": f"{{Tags:[\"monsters.{mob_lowercase}\"]}}"
                                 }
                             }
                         ]

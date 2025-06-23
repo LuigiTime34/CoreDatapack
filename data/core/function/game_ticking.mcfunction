@@ -11,6 +11,8 @@ function core:waves/wave_management
 
 #> Monster Abilities
 execute as @e[tag=monster] run function core:monsters/abilities/abilities_ticking
+execute as @e[tag=!monster,type=silverfish] run function core:monsters/abilities/abilities_ticking
+execute as @e[tag=!monster,tag=monsters.baby_zombie] run function core:monsters/abilities/abilities_ticking
 
 #> Boss Abilities
 execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_ability_ticking

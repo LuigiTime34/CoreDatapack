@@ -8,7 +8,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{Tags:[\"defense-armor_zombie\"]}"
+                            "nbt": "{Tags:[\"monsters.armor_zombie\"]}"
                         }
                     }
                 ]

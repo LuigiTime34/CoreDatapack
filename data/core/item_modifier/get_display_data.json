@@ -1,0 +1,59 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "entity": "@s",
+      "nbt": "equipment.body.components.\"minecraft:item_name\"",
+      "source": "entity",
+      "type": "nbt",
+      "interpret": true,
+      "color": "red"
+    },
+    {
+      "text": " [",
+      "type": "text",
+      "color": "red"
+    },
+    {
+        "storage": "defense:monsters",
+        "nbt": "indicator.int",
+        "source": "storage",
+        "type": "nbt",
+        "color": "green"
+    },
+    {
+        "storage": "defense:monsters",
+        "nbt": "indicator.dec_point",
+        "source": "storage",
+        "type": "nbt",
+        "color": "green"
+    },
+    {
+        "storage": "defense:monsters",
+        "nbt": "indicator.dec",
+        "source": "storage",
+        "type": "nbt",
+        "color": "green"
+    },
+    {
+      "text": "/",
+      "type": "text",
+      "color": "red"
+    },
+    {
+      "score": {
+        "objective": "monster_health",
+        "name": "monster.health_max"
+      },
+      "type": "score",
+      "color": "green"
+    },
+    {
+      "text": "]",
+      "type": "text",
+      "color": "red"
+    }
+  ],
+  "target": "custom_name"
+}

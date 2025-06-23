@@ -5,6 +5,7 @@ $execute if score current.chain towers_storm matches $(max_chain_length).. run r
 scoreboard players add current.chain towers_storm 1
 tag @s add towers.in_chain
 $damage @s $(chain_damage) minecraft:mob_attack_no_aggro by @p
+function core:monsters/health/update
 playsound minecraft:block.vault.close_shutter master @a ~ ~ ~ 10 1.8
 playsound minecraft:block.vault.eject_item master @a ~ ~ ~ 10 1.8
 playsound minecraft:entity.player.attack.crit master @a ~ ~ ~ 10 0.5

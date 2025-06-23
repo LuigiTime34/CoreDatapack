@@ -8,7 +8,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                            "nbt": "{Tags:[\"defense-charged_creeper\"]}"
+                            "nbt": "{Tags:[\"monsters.charged_creeper\"]}"
                         }
                     }
                 ]
