@@ -14,5 +14,5 @@ execute store result storage defense:monsters indicator.motion[1] double 0.01 ru
 execute store result storage defense:monsters indicator.motion[2] double 0.01 run random value -20..20
 
 #: summon indicator
-execute anchored eyes positioned ^ ^ ^ run summon item ~ ~-.75 ~ {Tags:["new","game.dmg_indicator"],Item:{id:"minecraft:stick", components:{item_model:"minecraft:air"}},Age:5980,PickupDelay:32767}
+summon item ~ ~ ~ {Tags:["new","game.dmg_indicator"],Item:{id:"minecraft:stick", components:{item_model:"minecraft:air"}},Age:5980,PickupDelay:32767}
 execute as @n[type=item,tag=new,tag=game.dmg_indicator] run function core:monsters/health/indicator/set

@@ -9,9 +9,9 @@ function core:monsters/health/split
 #: get max health
 execute store result score monster.health_max monster_health run data get entity @s attributes[{id:"minecraft:max_health"}].base
 
-#: set name
-item modify entity @s armor.body core:get_display_data
-data modify entity @s CustomName set from entity @s equipment.body.components."minecraft:custom_name"
+#: health display
+execute if entity @s[tag=!monsters.jockey] run function core:monsters/health/display
+execute if entity @s[tag=monsters.jockey] run function core:monsters/health/display_jockey
 
 #> Damage Indicators
 
@@ -19,7 +19,8 @@ data modify entity @s CustomName set from entity @s equipment.body.components."m
 scoreboard players operation monster.health monster_health -= @s monster_health
 
 #: summon indicator
-execute unless score monster.health monster_health matches 0 at @s run function core:monsters/health/indicator/summon
+execute if entity @s[tag=!micro.mob] unless score monster.health monster_health matches 0 at @s anchored eyes positioned ^ ^-0.75 ^ run function core:monsters/health/indicator/summon
+execute if entity @s[tag=micro.mob] unless score monster.health monster_health matches 0 at @s anchored eyes positioned ^ ^-0.25 ^ run function core:monsters/health/indicator/summon
 
 #> Get Current Health
 execute store result score @s monster_health run data get entity @s Health 10

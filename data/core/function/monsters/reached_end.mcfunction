@@ -1,3 +1,8 @@
+tp @s ~ ~ ~
+
+execute if entity @s[type=spider] on passengers run function core:monsters/abilities/spider/dismount
+execute if entity @s[type=chicken] on passengers run function core:monsters/abilities/chicken_jockey/dismount
+
 playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 100000000000 0.8
 # playsound minecraft:entity.wither.break_block master @a ~ ~ ~ 100000000000 0.8
 

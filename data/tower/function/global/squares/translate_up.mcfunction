@@ -1,0 +1,2 @@
+execute unless entity @s[tag=game.has_tower] if data entity @p[gamemode=adventure] SelectedItem.components."minecraft:custom_data"{bee:1b} run function tower:global/squares/get_rotation
+$data merge entity @s {interpolation_duration:2,start_interpolation:0,item:{id:"$(item)"},transformation:{scale:[$(scale)f,$(scale)f,0.5f]}}

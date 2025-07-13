@@ -16,14 +16,19 @@ scoreboard objectives add vdvcasttemp dummy
 #: specific monster types
  scoreboard objectives add monster_ravager_speed dummy
  scoreboard objectives add monster_bogged_health dummy
+ scoreboard objectives add monster_enderman_marker dummy
+  scoreboard players add marker.id monster_enderman_marker 0
 
 #> Tower scoreboards
 #: general tower functionality
+ scoreboard objectives add towers_cost dummy
+ scoreboard objectives add tower_placement dummy
  scoreboard objectives add towers_cooldown dummy
  scoreboard objectives add tower_range_indicator dummy
  scoreboard objectives add tower_range_particle dummy
 
 #: bee towers
+ scoreboard objectives add towers_bee_damage dummy
  scoreboard objectives add towers_bee_cooldown dummy
  scoreboard objectives add towers_bee_util dummy
  scoreboard objectives add towers_bee_gold_animation dummy

@@ -1,5 +1,0 @@
-data modify storage core:bee_damage damage set from entity @n[tag=towers.bee] Health
-execute on passengers if entity @s[type=minecraft:bee,tag=towers.bee] positioned ~ -59 ~ if entity @e[distance=..10,tag=towers.upgrade_money2,tag=towers.bee_marker,limit=1] run attribute @s minecraft:attack_damage modifier add core:honey_rain 1 add_value
-execute on passengers if entity @s[type=minecraft:bee,tag=towers.bee] store result storage core:bee_damage money int 1 run attribute @s minecraft:attack_damage get
-execute on passengers if entity @s[tag=!towers.queen_bee,tag=!towers.bee_flower] on vehicle run function core:towers/bee/math/damage_entity with storage core:bee_damage
-execute on passengers if entity @s[tag=towers.queen_bee] on vehicle if entity @s[tag=!towers.queen_bee_attacked] run function core:towers/bee/math/queen_damage_entity with storage core:bee_damage

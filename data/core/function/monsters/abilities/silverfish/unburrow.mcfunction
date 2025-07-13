@@ -1,10 +1,19 @@
-execute if entity @s[tag=monster] run return run scoreboard players remove @s monster_abilities 40
-tp @s ~ ~1 ~
+#> Silverfish Unburrow
+
+#: unburrow
+data merge entity @s {Invulnerable:false,CustomNameVisible:true}
+tp @s ~ -59 ~
+
+#: add tags
 tag @s add monster
-data modify entity @s Invulnerable set value 0b
-scoreboard players set @s monster_speed 32
-execute store result score @s monster_damage run data get entity @s Health 10
-scoreboard players operation @s monster_damage += silverfish.heal monster_damage
-execute store result storage core:silverfish_health health float 0.1 run scoreboard players get @s monster_damage
-data modify entity @s Health set from storage core:silverfish_health health
+tag @s add moving
+
+#: heal
+execute store result score monster.health monster_health run data get entity @s Health 10
+scoreboard players add monster.health monster_health 30
+execute if score monster.health monster_health matches 300.. run scoreboard players set monster.health monster_health 300
+execute store result entity @s Health float 0.1 run scoreboard players get monster.health monster_health
 function core:monsters/health/update
+
+#: cooldown
+scoreboard players set @s monster_abilities -100

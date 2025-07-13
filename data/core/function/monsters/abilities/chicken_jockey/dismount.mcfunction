@@ -1,6 +1,20 @@
-tag @s add monster
-tag @s add monsters.show_health
-tag @s add monsters.new
-data merge entity @s[tag=!monsters.big_chicken_jockey] {CustomNameVisible:1b,CustomName:"Baby Zombie",equipment:{body:{id:"minecraft:mud",count:1,components:{"minecraft:equippable":{slot:"body",equip_sound:"intentionally_empty"},"minecraft:item_name":"Baby Zombie"}}}}
-data merge entity @s[tag=monsters.big_chicken_jockey] {CustomNameVisible:1b,CustomName:"Zombie",equipment:{body:{id:"minecraft:mud",count:1,components:{"minecraft:equippable":{slot:"body",equip_sound:"intentionally_empty"},"minecraft:item_name":"Zombie"}}}}
+#> Chicken Jockey Dismount
+
+#: ride
+ride @s dismount
+data modify entity @s Invulnerable set value false
+
+#: position
 execute at @s run tp @s ~ -59 ~
+
+#: tags
+tag @s add moving
+tag @s add monster
+tag @s remove monster.ability
+tag @s remove monsters.riding_chicken
+
+#: set name
+data merge entity @s[tag=monsters.baby_zombie] {CustomName:"Baby Zombie"}
+data merge entity @s[tag=monsters.big_chicken_jockey] {CustomName:"Zombie"}
+item modify entity @s armor.body core:update_name
+function core:monsters/health/update

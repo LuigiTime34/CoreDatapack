@@ -1,5 +1,8 @@
-#: tower disabling effects
- scoreboard players add @s towers_cooldown 1
+#> Charged Creeper Tower Disable
 
- #: display dummy charged creeper on disable
- execute unless entity @n[distance=..3.5,tag=monsters.creeper_display] run summon minecraft:creeper ~ ~-3 ~ {NoAI:1b,powered:1b,attributes:[{id:"minecraft:scale",base:8.0}],Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:-1,show_particles:0b}],Tags:["monsters.creeper_display"],Team:"defense_player"}
+#: display fire prevention
+execute as @n[type=creeper,tag=monsters.creeper_display] run data merge entity @s {Fire:0}
+
+#: explosion cooldown
+scoreboard players add @s monster_abilities 1
+execute if score @s monster_abilities matches 80 at @s run function core:monsters/abilities/charged_creeper/tower_enable

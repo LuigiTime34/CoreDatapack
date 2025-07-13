@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "tower_place": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "tower:placement/indicator/sound"
+  }
+}

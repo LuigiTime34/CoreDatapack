@@ -1,0 +1,11 @@
+{
+  "function": "minecraft:set_name",
+  "entity": "this",
+  "name": [
+    {
+      "entity": "@s",
+      "nbt": "CustomName"
+    }
+  ],
+  "target": "item_name"
+}

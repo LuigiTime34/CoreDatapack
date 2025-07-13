@@ -1,6 +1,9 @@
-execute if data entity @s {Health:30.0f} run return run scoreboard players set @s monster_abilities 100
-tp @s ~ ~-1 ~
+#> Silverfish Burrow
+
+#: burrow
+data merge entity @s {Invulnerable:true,CustomNameVisible:false}
+tp @s ~ ~-0.6 ~
+
+#: remove tags
 tag @s remove monster
-data modify entity @s Invulnerable set value 1b
-scoreboard players set @s monster_speed 0
-scoreboard players set @s monster_abilities 100
+tag @s remove moving

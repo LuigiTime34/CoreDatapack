@@ -1,0 +1,34 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:item_name": {
+      "text": "Sell Tower",
+      "color": "red",
+      "bold": true
+    },
+    "minecraft:lore": [
+      {
+      "text": "Having second thoughts?",
+      "type": "text",
+      "color": "dark_red",
+      "italic": false
+      },
+      {
+      "text": "Sell for 80% of the gold you spent.",
+      "type": "text",
+      "color": "dark_red",
+      "italic": false
+      },
+      {
+      "text": "Choose wisely next time!",
+      "type": "text",
+      "color": "dark_red",
+      "italic": false
+      }
+    ],
+    "minecraft:custom_data": {
+      "ui_item": true,
+      "sell_item": true
+    }
+  }
+}

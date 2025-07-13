@@ -1,8 +1,17 @@
-execute store result score @s monster_damage run data get entity @s Health 10
-scoreboard players operation @s monster_damage += bogged.heal monster_damage
-execute store result storage core:monster_bogged_health health float 0.1 run scoreboard players get @s monster_damage
-data modify entity @s Health set from storage core:monster_bogged_health health
+#> Bogged Heal
+
+#: reset timer
+scoreboard players set @s monster_abilities 0
+
+#: heal
+execute store result score monster.health monster_health run data get entity @s Health 10
+scoreboard players add monster.health monster_health 20
+execute store result entity @s Health float 0.1 run scoreboard players get monster.health monster_health
 function core:monsters/health/update
+
+#: particle
 particle minecraft:spore_blossom_air ~ ~1 ~ 0.3 0.3 0.3 0 2
+
+#: playsound
 playsound minecraft:item.bone_meal.use master @a ~ ~ ~ 2 0.5
-scoreboard players set @s monster_abilities 20
+

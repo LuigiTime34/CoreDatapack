@@ -1,3 +1,23 @@
-execute positioned 4 -59 146 run summon minecraft:creeper ~ ~ ~ {CustomName:"Charged Creeper",CustomNameVisible:1b,Health:80,NoAI:1b,Rotation:[90.0f,0.0f],Tags:["monster","monsters.show_health","monsters.charged_creeper","monsters.new"],Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:80},{id:"minecraft:attack_damage",base:35},{id:"minecraft:attack_knockback",base:23}],PersistenceRequired:1b,powered:1b,Passengers:[{id:"minecraft:marker",Tags:["monsters.creeper_death"]}],equipment:{body:{id:"minecraft:mud",count:1,components:{"minecraft:equippable":{slot:"body",equip_sound:"intentionally_empty"},"minecraft:item_name":"Charged Creeper"}}}}
+#> Summon Charged Creeper
+
+#: advancement
 execute as @a[advancements={core:mobs/charged_creeper=false}] run advancement grant @s only core:mobs/charged_creeper
-execute positioned 4 -59 146 run scoreboard players set @n[tag=monsters.charged_creeper] monster_distance 0
+
+#: summon
+summon minecraft:creeper ~ ~ ~ \
+    {CustomName:"Charged Creeper",CustomNameVisible:1b,Health:75,NoAI:1b,Rotation:[90.0f,0.0f], \
+     Tags:["moving","monster","monsters.show_health","monsters.charged_creeper","monsters.new"], \
+     Team:"defense_enemies",attributes:[{id:"minecraft:max_health",base:75}],PersistenceRequired:1b, \
+     Passengers:[{id:"minecraft:marker",Tags:["monsters.creeper_death","monster.ability"]}], powered:true, \
+     equipment:{ \
+        body:{id:"minecraft:mud",count:1,components:{"minecraft:equippable":{slot:"body",equip_sound:"intentionally_empty"},"minecraft:item_name":"Charged Creeper"}}}}
+
+#: set speed
+scoreboard players set @n[type=creeper,tag=monsters.new] monster_speed 24
+
+#: set health
+execute as @n[type=creeper,tag=monsters.new] store result score @s monster_health run data get entity @s attributes[{id:"minecraft:max_health"}].base 10
+execute as @n[type=creeper,tag=monsters.new] run function core:monsters/health/update
+
+#: remove new tag
+tag @e[type=creeper,tag=monsters.new] remove monsters.new

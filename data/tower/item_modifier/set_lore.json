@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_lore",
+  "entity": "this",
+  "lore": [
+    {
+        "storage": "defense:items",
+        "nbt": "desc.lore",
+        "color": "yellow"
+    }
+  ],
+  "mode": "insert"
+}

@@ -1,21 +1,22 @@
+#> Game Ticking
+
 #> Wave Management
-function core:waves/wave_management
-
-#> Monster Movement
- execute as @e[tag=monster] at @s run function core:monsters/movement/movement_ticking
-
-#> Bossbar Management
- #: hide boss bar when no boss present
- execute unless entity @n[tag=monsters.boss] run bossbar set core:boss visible false
- execute if entity @n[tag=monsters.boss] run bossbar set core:boss name {selector:"@n[tag=monsters.boss]",type:"selector"}
+#function core:waves/wave_management
 
 #> Monster Abilities
-execute as @e[tag=monster] run function core:monsters/abilities/abilities_ticking
-execute as @e[tag=!monster,type=silverfish] run function core:monsters/abilities/abilities_ticking
-execute as @e[tag=!monster,tag=monsters.baby_zombie] run function core:monsters/abilities/abilities_ticking
+ execute as @e[tag=monster.ability] run function core:monsters/abilities/abilities_ticking
 
-#> Boss Abilities
-execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_ability_ticking
+#> Monster Movement
+ execute as @e[tag=moving] at @s run function core:monsters/movement/determine_speed
+
+
+##> Bossbar Management
+# #: hide boss bar when no boss present
+# execute unless entity @n[tag=monsters.boss] run bossbar set core:boss visible false
+# execute if entity @n[tag=monsters.boss] run bossbar set core:boss name {selector:"@n[tag=monsters.boss]",type:"selector"}
+#
+##> Boss Abilities
+#execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_ability_ticking
 
 #> UI Display Management
  #: recent gold display
@@ -28,9 +29,9 @@ execute if entity @e[tag=monsters.boss] run function core:monsters/boss/boss_abi
  execute if score recent.hit monster_damage matches 0 run scoreboard players set recent.damage monster_damage 0
  execute if score recent.hit monster_damage matches 0 run function core:scoreboard/get_highest
 
-#>End of round
-execute as @a[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=game.failure_view]
-execute if score dead. game_progress matches 1 run function core:end/clear_all_waves
+##>End of round
+#execute as @a[gamemode=spectator] if score dead. game_progress matches 1 run spectate @n[tag=game.failure_view]
+#execute if score dead. game_progress matches 1 run function core:end/clear_all_waves
 
 #> Tower Ticking
-function core:towers/tower_ticking
+function tower:tower_ticking

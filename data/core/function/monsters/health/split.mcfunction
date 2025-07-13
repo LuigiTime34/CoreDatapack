@@ -11,8 +11,8 @@ scoreboard players set monster.dec monster_health 0
 execute if score monster.health monster_health > monster.int monster_health store result score monster.dec monster_health run scoreboard players get monster.health monster_health
 execute if score monster.health monster_health < monster.int monster_health store result score monster.dec monster_health run scoreboard players get monster.int monster_health
 
-execute if score monster.health monster_health > monster.int monster_health run scoreboard players operation monster.dec monster_health -= monster.int monster_health
-execute if score monster.health monster_health < monster.int monster_health run scoreboard players operation monster.dec monster_health -= monster.health monster_health
+execute if score monster.dec monster_health = monster.health monster_health run scoreboard players operation monster.dec monster_health -= monster.int monster_health
+execute if score monster.dec monster_health = monster.int monster_health run scoreboard players operation monster.dec monster_health -= monster.health monster_health
 
 #: store decimal
 execute if score monster.dec monster_health matches 1.. store result storage defense:monsters indicator.dec int 1 run scoreboard players get monster.dec monster_health
